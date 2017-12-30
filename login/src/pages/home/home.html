@@ -1,34 +1,29 @@
 <ion-header >
-  <ion-navbar color="primary">
-    <ion-title>
-      Login
-    </ion-title>
-  </ion-navbar>
+  
 </ion-header>
-<ion-content style="background-image: url('assets/imgs/cat_wall.jpg');background-size: 100% 100% !important;
- ">
-  <ion-list>
-    <div class="spacer" style="width: 500px; height: 95px;"></div>
-        <ion-item style="background-color: transparent;">
-          <ion-label floating style="color: black;">Username</ion-label>
-          <ion-input type="text" value=""></ion-input>
-        </ion-item>
+
+
+<ion-content padding class="login" style="background-image:url('assets/imgs/cat_wall.jpg');background-repeat: no-repeat;background-size: 100% 100% !important;">
+  
     
-        <ion-item style="background-color: transparent;">
-          <ion-label floating style="color: black;">Password</ion-label>
-          <ion-input type="password" value=""></ion-input>
-        </ion-item>
-    
-      </ion-list>
-    
-      <div padding>
-        <button ion-button color="primary" block>Sign In</button>
-      </div>
-      <div padding>
-          
-          <h6>Not Registered? 
-            <a (click)='signup()'>signup</a>
-          </h6>
-    
-        </div>
-</ion-content>
+  <div class="spacer" style="width: 500px; height: 95px;"></div>
+    <ion-list class="list-form" style="margin-top:30px;margin-bottom: 30px">
+      
+      <ion-item style="padding:0px !important; border-bottom:none !important;border-top:none;margin-top:10px;background:none;border-bottom:1px solid white;box-shadow:none;">
+        <ion-label floating style="color: black;">Username</ion-label>
+        <ion-input style="color:white;border-bottom-color:white;box-shadow:none;" type="text" ></ion-input>
+      </ion-item>
+      <ion-item style="padding:0px !important;border-bottom:none ;border-top:none !important; margin-top:10px;background:none;border-bottom:1px solid white;box-shadow:none;">
+        <ion-label floating style="color: black;">Password</ion-label>
+        <ion-input style="color:white;border-bottom-color:white;box-shadow:none;" type="Password" ></ion-input>
+      </ion-item>
+  
+    </ion-list>
+  
+    <button style="margin-top: 15px;height: 35px;font-size: 14px;background: #10ABF4;" ion-button  block  (click)="login()">Login</button>
+  
+    <div text-center style="text-decoration: underline;margin-top:20px;color:white;font-size: 14px;"  >Forgot Password</div>
+    <button ion-button style="background-color: transparent;color:white;border-color:white;border:1px solid white;margin-top:20px;height: 35px;font-size: 14px;"  block  (click)='signup()'>Register</button>
+  </ion-content>
+
+
