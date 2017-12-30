@@ -14,7 +14,7 @@ export class SignupPage {
   }
 
   signin(){
-    this.navCtrl.pop(HomePage);
+    this.navCtrl.push(HomePage);
     console.log("workink");
     }
   
