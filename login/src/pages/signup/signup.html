@@ -1,13 +1,48 @@
-
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>signup</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-gdfg
-</ion-content>
+  
+    <ion-navbar color="midnight">
+      <ion-title>Sign up</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content style="background-image: url('assets/imgs/dg.jpg');background-size: 100% 100% !important;
+  ">
+   <ion-list>
+     
+         <ion-item style="background-color: transparent;">
+           <ion-label floating style="color: black;">Username</ion-label>
+           <ion-input type="text" value=""></ion-input>
+         </ion-item>
+  
+         <ion-item style="background-color: transparent;">
+          <ion-label floating style="color: black;">Name</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>
+  
+        <ion-item style="background-color: transparent;">
+          <ion-label floating style="color: black;">Email Address</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>
+     
+         <ion-item style="background-color: transparent;">
+           <ion-label floating style="color: black;">Password</ion-label>
+           <ion-input type="password" value=""></ion-input>
+         </ion-item>
+     
+       </ion-list>
+     
+       <div padding>
+         <button ion-button color="midnight" block>Sign Up</button>
+       </div>
+       <div padding>
+        
+        <h6>Already have an account? 
+          <a (click)='signin()'>Sign in</a>
+        </h6>
+  
+      </div>
+        
+  </ion-content>
+  
+  

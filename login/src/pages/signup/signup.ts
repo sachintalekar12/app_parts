@@ -13,6 +13,10 @@ export class SignupPage {
   constructor(public navCtrl: NavController) {
   }
 
+  signin(){
+    this.navCtrl.push(HomePage);
+    console.log("workink");
+    }
   
 
 }
